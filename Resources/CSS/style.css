@@ -70,3 +70,36 @@ header {
   top: 10rem;
   display: inline-block;
 }
+
+/* Service section styling */
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.exams img {
+  width: 3.5rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom img, .delivery img {
+  width: 5rem;
+  height: auto;
+  display: block;
+}
+
+/* Info section styling */

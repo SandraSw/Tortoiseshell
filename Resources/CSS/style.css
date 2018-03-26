@@ -11,6 +11,12 @@ html {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .bar, .info h2 {
   color: white;
   font-size: 1rem;
@@ -26,6 +32,19 @@ header {
   height: 31rem;
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+}
+
 /* Header - Navigation bar styling */
 .bar {
   display: flex;
@@ -33,6 +52,12 @@ header {
   justify-content: space-between;
   position: relative;
   top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .bar {
+    top: 0rem;
+  }
 }
 
 .company {
@@ -56,6 +81,20 @@ header {
   padding: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .large {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* Header - Title styling */
 
 .main-title {
@@ -74,11 +113,38 @@ header {
   display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+  .title {
+    top: 5rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    top: 9rem;
+    right: 0rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+
 /* Service section styling */
 .products {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .products {
+    flex-direction: column;
+    margin: 3.77rem auto;
+  }
 }
 
 .product {
@@ -90,6 +156,21 @@ header {
   margin: 3rem;
   width: 5rem;
   height: 8rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .product {
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .product span {
+    font-size: 0.77rem;
+    padding-top: 1.54rem;
+  }
+  .exams, .custom {
+    margin-bottom: 1.54rem;
+  }
 }
 
 .exams img {
@@ -111,11 +192,35 @@ header {
   justify-content: center;
 }
 
+@media only screen and (max-width: 650px) {
+  .info {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .detail {
   display: flex;
   flex-direction: column;
   width: 35%;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .detail {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .detail h2 {
+    width: 100%;
+    margin: 0;
+  }
+  .detail p {
+    margin-top: 1rem;
+    font-size: 0.77rem;
+  }
 }
 
 .detail h2 {

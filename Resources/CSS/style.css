@@ -115,6 +115,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 35%;
+  margin-bottom: 5rem;
 }
 
 .detail h2 {
@@ -126,4 +127,19 @@ header {
 
 .philosophy p {
   margin-right: 5%;
+}
+
+/* Footer styling */
+
+footer .container {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+  padding: 4rem 0;
 }

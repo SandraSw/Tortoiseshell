@@ -214,12 +214,14 @@ header {
     margin-bottom: 4rem;
   }
   .detail h2 {
-    width: 100%;
-    margin: 0;
+    text-align: center;
+    max-width: none;
   }
   .detail p {
     margin-top: 1rem;
     font-size: 0.77rem;
+    margin-right: 5%;
+    margin-left: 1%;
   }
 }
 
@@ -247,4 +249,13 @@ footer img {
   margin-left: 4rem;
   margin-right: 1rem;
   padding: 4rem 0;
+}
+
+@media only screen and (max-width: 650px) {
+  footer p {
+    display: none;
+  }
+  footer .container {
+    justify-content: center;
+  }
 }
